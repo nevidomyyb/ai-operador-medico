@@ -60,7 +60,7 @@ export default function Step1Patient({ defaultValues, onNext }) {
           <input type="number" min="0" step="0.01" {...register('income_monthly_brl', { required: true, valueAsNumber: true })} className={inputCls(errors.income_monthly_brl)} placeholder="5000.00" />
         </Field>
         <Field label="Propriedade do Imóvel" error={errors.IsHomeOwner}>
-          <select {...register('IsHomeOwner', { required: true, setValueAs: (v) => v === '1' })} className={inputCls(errors.IsHomeOwner)}>
+          <select {...register('IsHomeOwner', { validate: (v) => v !== '' || 'Campo obrigatório' })} className={inputCls(errors.IsHomeOwner)}>
             <option value="">Selecione</option>
             <option value="1">Sim</option>
             <option value="0">Não</option>

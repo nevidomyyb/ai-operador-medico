@@ -1,5 +1,8 @@
 services:
   db:
+    networks:
+      - medanalysis
+      - proxy
     image: postgres:16-alpine
     environment:
       POSTGRES_DB: medanalysis
@@ -14,6 +17,9 @@ services:
       retries: 10
 
   backend:
+    networks:
+        - medanalysis
+        - proxy
     build: ./backend
     depends_on:
       db:
@@ -32,6 +38,9 @@ services:
       - "8000:8000"
 
   frontend:
+    networks:
+      - medanalysis
+      - proxy
     build: ./frontend
     depends_on:
       - backend
@@ -40,3 +49,9 @@ services:
 
 volumes:
   postgres_data:
+
+networks:
+  medanalysis:
+    external: false
+  proxy:
+    external: true

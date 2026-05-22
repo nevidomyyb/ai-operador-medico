@@ -28,6 +28,14 @@ export default function NewAssessment() {
 
   const handleStep2 = async (data) => {
     const merged = { ...formData, ...data };
+
+    // Coerce select string → boolean
+    merged.IsHomeOwner = merged.IsHomeOwner === '1' || merged.IsHomeOwner === true;
+
+    // Remove empty-string optional fields so Pydantic receives null, not ""
+    const OPTIONAL_FIELDS = ['suggested_date', 'additional_notes', 'request_date'];
+    OPTIONAL_FIELDS.forEach((k) => { if (merged[k] === '') merged[k] = null; });
+
     setSubmitting(true);
     setError('');
     try {
