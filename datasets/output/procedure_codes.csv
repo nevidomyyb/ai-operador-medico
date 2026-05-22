@@ -1,0 +1,72 @@
+﻿ProcedureCode,ProcedureNamePTBR,ProcedureCategory
+PCAR001,Cateterismo Cardíaco,Procedimentos Hemodinâmicos
+PCAR002,Ecocardiograma Transtorácico,Diagnóstico por Imagem
+PCAR003,Holter 24 Horas,Monitorização Cardíaca
+PCAR004,Cardioversão Elétrica,Procedimentos Terapêuticos
+PCAR005,Implante de Marcapasso,Cirurgia Cardíaca
+PCAR006,Angioplastia Coronariana,Procedimentos Hemodinâmicos
+PCAR007,Revascularização do Miocárdio,Cirurgia Cardíaca
+PCAR008,Ecocardiograma de Estresse,Diagnóstico por Imagem
+PCAR009,Monitorização de Pressão Arterial (MAPA),Monitorização Cardíaca
+PCAR010,Ablação por Radiofrequência,Procedimentos Eletrofisiológicos
+PCAR011,Teste Ergométrico,Diagnóstico Funcional
+PCAR012,Implante de Desfibrilador,Cirurgia Cardíaca
+PCAR013,Ecodopplercardiograma,Diagnóstico por Imagem
+PCAR014,Valvoplastia Mitral,Cirurgia Cardíaca
+PCLG015,Consulta Médica Ambulatorial,Consultas
+PCLG016,Coleta de Exames Laboratoriais,Diagnóstico Laboratorial
+PCLG017,Eletrocardiograma,Diagnóstico Cardiológico
+PCLG018,Espirometria,Diagnóstico Respiratório
+PCLG019,Ultrassonografia Abdominal,Diagnóstico por Imagem
+PCLG020,Raio-X de Tórax,Diagnóstico por Imagem
+PCLG021,Curativo e Sutura,Procedimentos Ambulatoriais
+PCLG022,Hemograma Completo,Diagnóstico Laboratorial
+PCLG023,Medição de Glicemia Capilar,Monitorização Metabólica
+PCLG024,Vacinação,Medicina Preventiva
+PCLG025,Aferição de Pressão Arterial,Monitorização Cardiovascular
+PCLG026,Teste de Gravidez,Diagnóstico Laboratorial
+PCLG027,Nebulização,Procedimentos Terapêuticos
+PCLG028,Orientação Nutricional,Promoção da Saúde
+PCLG029,Eletroencefalograma,Diagnóstico Neurológico
+PNEU030,Eletroencefalograma (EEG),Diagnóstico Neurológico
+PNEU031,Ressonância Magnética Encefálica,Diagnóstico por Imagem
+PNEU032,Punção Lombar,Procedimentos Diagnósticos
+PNEU033,Eletroneuromiografia,Diagnóstico Neuromuscular
+PNEU034,Potencial Evocado Visual,Diagnóstico Neurofisiológico
+PNEU035,Tomografia de Crânio,Diagnóstico por Imagem
+PNEU036,Doppler Transcraniano,Diagnóstico Vascular
+PNEU037,Avaliação Neuropsicológica,Avaliação Cognitiva
+PNEU038,Toxina Botulínica Terapêutica,Procedimentos Terapêuticos
+PNEU039,Estimulação Magnética Transcraniana,Procedimentos Terapêuticos
+PNEU040,Biópsia de Nervo Periférico,Procedimentos Cirúrgicos
+PNEU041,Angiografia Cerebral,Diagnóstico por Imagem
+PNEU042,Polissonografia,Diagnóstico do Sono
+PNEU043,Implante de Estimulador Cerebral Profundo,Neurocirurgia
+PORT044,Artroscopia de Joelho,Cirurgia Artroscópica
+PORT045,Artroplastia Total de Quadril,Cirurgia Articular
+PORT046,Osteossíntese de Fêmur,Procedimentos Cirúrgicos
+PORT047,Artroscopia de Ombro,Cirurgia Artroscópica
+PORT048,Artroplastia Total de Joelho,Cirurgia Articular
+PORT049,Discectomia Lombar,Cirurgia da Coluna
+PORT050,Fisioterapia Ortopédica,Reabilitação
+PORT051,Imobilização com Gesso,Procedimentos Ambulatoriais
+PORT052,Infiltração Intra-articular,Procedimentos Terapêuticos
+PORT053,Osteossíntese de Punho,Procedimentos Cirúrgicos
+PORT054,Tenotomia,Procedimentos Cirúrgicos
+PORT055,Radiografia Óssea,Diagnóstico por Imagem
+PORT056,Densitometria Óssea,Diagnóstico por Imagem
+PORT057,Correção Cirúrgica de Escoliose,Cirurgia da Coluna
+PPED058,Teste do Pezinho,Triagem Neonatal
+PPED059,Vacinação Pediátrica,Medicina Preventiva
+PPED060,Nebulização Pediátrica,Procedimentos Terapêuticos
+PPED061,Triagem Auditiva Neonatal,Triagem Neonatal
+PPED062,Consulta de Puericultura,Consultas
+PPED063,Teste do Olhinho,Triagem Neonatal
+PPED064,Amigdalectomia,Cirurgia Pediátrica
+PPED065,Adenoidectomia,Cirurgia Pediátrica
+PPED066,Oximetria de Pulso,Monitorização Respiratória
+PPED067,Ventilação Não Invasiva Pediátrica,Suporte Ventilatório
+PPED068,Paracentese de Membrana Timpânica,Cirurgia Otorrinolaringológica
+PPED069,Avaliação do Desenvolvimento Neuropsicomotor,Avaliação Pediátrica
+PPED070,Coleta de Hemocultura Pediátrica,Diagnóstico Laboratorial
+PPED071,Fototerapia para Icterícia Neonatal,Procedimentos Terapêuticos

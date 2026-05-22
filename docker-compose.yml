@@ -20,7 +20,9 @@ services:
     networks:
         - medanalysis
         - proxy
-    build: ./backend
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
     depends_on:
       medanalysis-db:
         condition: service_healthy
@@ -31,9 +33,6 @@ services:
       MODEL_PATH: /app/models/best_model.pkl
       DIAGNOSES_CSV: /app/data/diagnosis_codes.csv
       PROCEDURES_CSV: /app/data/procedure_codes.csv
-    volumes:
-      - ./ai/models:/app/models:ro
-      - ./datasets/output:/app/data:ro
     ports:
       - "8000:8000"
 

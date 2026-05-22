@@ -1,0 +1,71 @@
+﻿DiagnosisCode,DiagnosisNamePTBR,DiagnosisCategory
+DCAR001,Insuficiência Cardíaca Congestiva,Doenças Cardiovasculares
+DCAR002,Hipertensão Arterial Sistêmica,Doenças Cardiovasculares
+DCAR003,Infarto Agudo do Miocárdio,Doenças Cardiovasculares
+DCAR004,Arritmia Cardíaca,Doenças Cardiovasculares
+DCAR005,Angina Pectoris Instável,Doenças Cardiovasculares
+DCAR006,Fibrilação Atrial,Doenças Cardiovasculares
+DCAR007,Cardiomiopatia Dilatada,Doenças Cardiovasculares
+DCAR008,Valvopatia Mitral,Doenças Cardiovasculares
+DCAR009,Endocardite Infecciosa,Doenças Cardiovasculares
+DCAR010,Trombose Venosa Profunda,Doenças Vasculares
+DCAR011,Embolia Pulmonar,Doenças Vasculares
+DCAR012,Aterosclerose Coronariana,Doenças Cardiovasculares
+DCAR013,Pericardite Aguda,Doenças Cardiovasculares
+DCAR014,Choque Cardiogênico,Doenças Cardiovasculares
+DCLG015,Diabetes Mellitus Tipo 2,Doenças Metabólicas
+DCLG016,Infecção do Trato Urinário,Doenças Infecciosas
+DCLG017,Pneumonia Bacteriana,Doenças Respiratórias
+DCLG018,Gastroenterite Aguda,Doenças Gastrointestinais
+DCLG019,Rinite Alérgica,Doenças Alérgicas
+DCLG020,Lombalgia Crônica,Doenças Musculoesqueléticas
+DCLG021,Hipotireoidismo,Doenças Endócrinas
+DCLG022,Anemia Ferropriva,Doenças Hematológicas
+DCLG023,Depressão Maior,Transtornos Mentais
+DCLG024,Ansiedade Generalizada,Transtornos Mentais
+DCLG025,Síndrome do Intestino Irritável,Doenças Gastrointestinais
+DCLG026,Obesidade Grau II,Doenças Metabólicas
+DCLG027,Doença do Refluxo Gastroesofágico,Doenças Gastrointestinais
+DCLG028,Bronquite Crônica,Doenças Respiratórias
+DNEU029,Enxaqueca Crônica,Doenças Neurológicas
+DNEU030,Epilepsia,Doenças Neurológicas
+DNEU031,Acidente Vascular Cerebral Isquêmico,Doenças Cerebrovasculares
+DNEU032,Doença de Parkinson,Doenças Neurodegenerativas
+DNEU033,Esclerose Múltipla,Doenças Autoimunes Neurológicas
+DNEU034,Neuropatia Periférica Diabética,Doenças Neurológicas
+DNEU035,Demência de Alzheimer,Doenças Neurodegenerativas
+DNEU036,Cefaleia Tensional Crônica,Doenças Neurológicas
+DNEU037,Neuralgia do Trigêmeo,Doenças Neurológicas
+DNEU038,Síndrome de Guillain-Barré,Doenças Neurológicas
+DNEU039,Meningite Bacteriana,Doenças Infecciosas do SNC
+DNEU040,Acidente Isquêmico Transitório,Doenças Cerebrovasculares
+DNEU041,Tremor Essencial,Doenças Neurológicas
+DNEU042,Miastenia Gravis,Doenças Neuromusculares
+DORT043,Fratura de Fêmur,Traumatologia
+DORT044,Lesão do Manguito Rotador,Doenças Musculoesqueléticas
+DORT045,Artrose de Joelho,Doenças Articulares
+DORT046,Hérnia de Disco Lombar,Doenças da Coluna
+DORT047,Tendinite Patelar,Doenças Musculoesqueléticas
+DORT048,Escoliose Idiopática,Doenças da Coluna
+DORT049,Fratura de Punho,Traumatologia
+DORT050,Osteoporose,Doenças Ósseas
+DORT051,Artrite Reumatoide,Doenças Autoimunes
+DORT052,Síndrome do Túnel do Carpo,Doenças Nervosas Periféricas
+DORT053,Bursite do Quadril,Doenças Musculoesqueléticas
+DORT054,Fratura de Tornozelo,Traumatologia
+DORT055,Tendinite de Aquiles,Doenças Musculoesqueléticas
+DORT056,Epicondilite Lateral,Doenças Musculoesqueléticas
+DPED057,Bronquiolite Aguda,Doenças Respiratórias Pediátricas
+DPED058,Asma Infantil,Doenças Respiratórias Pediátricas
+DPED059,Otite Média Aguda,Doenças Otorrinolaringológicas
+DPED060,Amigdalite Bacteriana,Doenças Otorrinolaringológicas
+DPED061,Dermatite Atópica,Doenças Dermatológicas
+DPED062,Varicela,Doenças Infecciosas Pediátricas
+DPED063,Pneumonia Viral,Doenças Respiratórias Pediátricas
+DPED064,Gastroenterite Aguda Pediátrica,Doenças Gastrointestinais
+DPED065,Febre Reumática,Doenças Infecciosas Pediátricas
+DPED066,Convulsão Febril,Doenças Neurológicas Pediátricas
+DPED067,Síndrome do Croup,Doenças Respiratórias Pediátricas
+DPED068,Rinite Alérgica Pediátrica,Doenças Alérgicas
+DPED069,Anemia Falciforme,Doenças Hematológicas
+DPED070,Diabetes Mellitus Tipo 1,Doenças Metabólicas

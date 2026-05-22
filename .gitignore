@@ -1,4 +1,8 @@
+# Datasets grandes (não versionar)
 *.csv
+!datasets/output/diagnosis_codes.csv
+!datasets/output/procedure_codes.csv
+
 .venv
 .claude
 *.log
