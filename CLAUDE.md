@@ -10,6 +10,7 @@ Pipeline de ML para predição de aprovação de sinistros de saúde (`ClaimStat
 - **Notebook ETL**: `ai/etl_localization.ipynb`
 - **Notebook Modelos**: `ai/models.ipynb`
 - **Modelo salvo**: `ai/models/best_model.pkl`
+- **Script de correção de catálogos**: `ai/fix_catalogs.py` (gera códigos canônicos)
 
 ---
 
@@ -23,8 +24,9 @@ Pipeline de ML para predição de aprovação de sinistros de saúde (`ClaimStat
 |---|---|
 | Conversão monetária | USD → BRL (taxa 5.75); colunas `ClaimAmountBRL`, `PatientIncomeBRL` |
 | Localização geográfica | `ProviderLocation` → `ProviderState` (sigla) + `ProviderStateName` via hash MD5 ponderado por população |
-| Tabelas auxiliares | `diagnosis_codes.csv`, `procedure_codes.csv` (nome PT-BR por especialidade) |
+| Tabelas auxiliares | `diagnosis_codes.csv` (70 únicos), `procedure_codes.csv` (71 únicos) — nome PT-BR por especialidade |
 | Tradução PT-BR | Gênero, estado civil, emprego, tipo de sinistro, especialidade, método de submissão |
+| Códigos canônicos | `DiagnosisCode` e `ProcedureCode` usam 1 código único por nome (ex: `DCAR001`, `PNEU003`) — gerado por `ai/fix_catalogs.py` |
 
 ### 1.2 Colunas sintéticas geradas
 
@@ -238,29 +240,35 @@ uvicorn api:app --host 0.0.0.0 --port 8000 --reload
 ### 4.4 Exemplo de requisição
 
 ```bash
-curl -X POST http://localhost:8000/predict \
+curl -X POST http://localhost:8000/api/predictions \
   -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <token>" \
   -d '{
-    "ClaimAmountUSD": 1200.00,
-    "PatientAge": 35,
+    "full_name": "João Silva",
+    "cpf": "123.456.789-00",
+    "birth_date": "1989-03-15",
     "PatientGender": "Masculino",
     "PatientMaritalStatus": "Casado(a)",
     "PatientEmploymentStatus": "Empregado",
-    "PatientIncomeUSD": 75000.00,
+    "ChildrenCount": 1,
+    "IsHomeOwner": true,
+    "EducationLevel": "Superior",
+    "HasChronicCondition": false,
+    "PlanType": "Empresarial",
+    "YearsAsInsured": 10,
+    "income_monthly_brl": 8000,
     "ProviderSpecialty": "Clínica Geral",
     "ClaimType": "Consulta de Rotina",
     "ClaimSubmissionMethod": "Online",
-    "DiagnosisCode": "yy006",
-    "ProcedureCode": "hd662",
+    "DiagnosisCode": "DCLG002",
+    "ProcedureCode": "PCLG001",
+    "claim_amount_brl": 690,
     "ProviderState": "SP",
-    "ChildrenCount": 1,
-    "IsHomeOwner": 1,
-    "EducationLevel": "Superior",
-    "PlanType": "Empresarial",
-    "YearsAsInsured": 10,
-    "HasChronicCondition": 0
+    "request_date": "2026-05-22"
   }'
 ```
+
+> **Nota sobre códigos**: após a correção dos catálogos, usar os códigos canônicos do formato `D{ESP}{NNN}` / `P{ESP}{NNN}` (ex: `DCAR001`, `PNED003`). Consultar `GET /api/catalogs/diagnoses` e `/procedures` para obter os códigos válidos.
 
 ### 4.5 Resposta esperada
 
