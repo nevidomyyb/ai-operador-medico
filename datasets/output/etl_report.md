@@ -1,6 +1,6 @@
 # Relatório ETL — Dataset de Sinistros de Saúde PT-BR
 
-**Data de geração:** 2026-04-21 17:05:19  
+**Data de geração:** 2026-05-21 18:57:35  
 **Taxa de câmbio utilizada:** 1 USD = 5.75 BRL  
 **Seed de geração (colunas sintéticas):** 42  
 
@@ -20,9 +20,8 @@
 
 | Status | Quantidade | Percentual |
 |---|---|---|
-| Aprovado | 1522 | 33.8% |
-| Negado | 1512 | 33.6% |
-| Pendente | 1466 | 32.6% |
+| Aprovado | 3114 | 69.2% |
+| Negado | 1386 | 30.8% |
 
 ## Colunas Adicionadas
 
@@ -50,7 +49,7 @@
 | PatientEmploymentStatus | 4 | Aposentado, Desempregado, Empregado, Estudante |
 | ClaimType | 4 | Ambulatorial, Consulta de Rotina, Emergência, Internação |
 | ClaimSubmissionMethod | 3 | Online, Papel/Correio, Telefone |
-| ClaimStatus | 3 | Aprovado, Negado, Pendente |
+| ClaimStatus | 2 | Aprovado, Negado |
 | ProviderSpecialty | 5 | Cardiologia, Clínica Geral, Neurologia, Ortopedia, Pediatria |
 | ProviderState | 27 | AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO |
 | EducationLevel | 4 | Fundamental, Médio, Pós-graduação, Superior |
@@ -65,13 +64,13 @@
 
 ## Distribuição por Especialidade × ClaimStatus
 
-| Especialidade | Aprovado | Negado | Pendente | Total |
-|---|---|---|---|---|
-| Cardiologia | 311 | 312 | 284 | 907 |
-| Clínica Geral | 280 | 312 | 288 | 880 |
-| Neurologia | 307 | 296 | 262 | 865 |
-| Ortopedia | 325 | 271 | 297 | 893 |
-| Pediatria | 299 | 321 | 335 | 955 |
+| Especialidade | Aprovado | Negado | Total |
+|---|---|---|---|
+| Cardiologia | 526 | 381 | 907 |
+| Clínica Geral | 694 | 186 | 880 |
+| Neurologia | 536 | 329 | 865 |
+| Ortopedia | 525 | 368 | 893 |
+| Pediatria | 833 | 122 | 955 |
 
 ## Inconsistências Detectadas
 
